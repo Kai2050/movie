@@ -1,0 +1,131 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background: #111;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Hero */
+.hero {
+  background: url('the-paper-bag-plan.jpg') center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.6);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.hero-buttons button {
+  background: #e50914;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1em;
+  color: white;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero-buttons button:hover {
+  background: #b81d24;
+}
+
+/* About Section */
+.about {
+  padding: 60px 20px;
+  background: #1c1c1c;
+}
+
+.about-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Rent Section */
+.rent {
+  padding: 60px 20px;
+  background: #000;
+  text-align: center;
+}
+
+.rent h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+select {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  background: #2c2c2c;
+  color: #fff;
+  border: none;
+  width: 300px;
+  max-width: 100%;
+}
+
+button {
+  background: #e50914;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #b81d24;
+}
+
+.confirmation {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #00ff00;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Paper Bag Plan</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay">
+      <h1>The Paper Bag Plan</h1>
+      <p>A father's love. A son's first step into independence.</p>
+      <div class="hero-buttons">
+        <button onclick="scrollToSection('rent')">🎬 Rent Now</button>
+        <button onclick="scrollToSection('about')">Learn More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>About the Film</h2>
+        <p>
+          Oscar has dedicated his life to the well-being of his disabled son, Billy.
+          When Oscar is diagnosed with cancer, he forges a plan to train his son
+          in the intricacies of bagging groceries in the hopes of landing Billy
+          his first job and beginning a life of independence.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="the-paper-bag-plan.jpg" alt="Poster of The Paper Bag Plan">
+      </div>
+    </div>
+  </section>
+
+  <!-- Rent Section -->
+  <section class="rent" id="rent">
+    <h2>Support a Charity and Rent the Film</h2>
+    <p>Select a charity below, then rent the film for $4.99</p>
+    <select id="charity">
+      <option disabled selected>Select a charity</option>
+      <option>Helping Hands Foundation</option>
+      <option>Nik's reitirement fund</option>
+      <option>Independence Now</option>
+      <option>Support for Special Needs</option>
+    </select>
+    <br /><br />
+    <button onclick="simulatePayment()">Rent for $2.99</button>
+    <div class="confirmation" id="confirmation"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
